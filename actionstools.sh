@@ -6,21 +6,24 @@ source toolsmenu.sh
 # ...
 
 # Main body
-Action=$(simple_menu)
-case $Action
+main_menu
+read Action
+case $Action in
   1 )
     #launch antivirus tools
-    # ...
+    echo "one"
     ;;
 
   2 )
     #Analyse a directory
     #Check permissions
     # ...
+    echo "two"
     ;;
   3 )
     #Make a back up with tar
     # ...
+    echo "three"
     ;;
 
   * )
